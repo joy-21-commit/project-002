@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #ffffff;
+  height: 100vh;
+  background-image: url(sunset-lookout.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: difference;
+}
+
+/* Navigation Area */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  padding-left: 20px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  transition: ease 0.3s;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #e8284f;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e8284f;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.auth-btns a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: ease 0.5s;
+}
+
+.auth-btns {
+  margin-right: 80px;
+}
+
+.auth-btns .signin:hover {
+  background: #e8284f;
+}
+
+.auth-btns .signup:hover {
+  background: #e8284f;
+}
+
+/* Starting with the login/signup box */
+
+main {
+  height: calc(100vh - 24px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-box {
+  background: rgba(0, 0, 0, 0.6);
+  width: 380px;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#register-page {
+  display: none;
+}
+
+.login-text,
+.register-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-text span a,
+.register-text span a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: ease 0.3s;
+}
+
+.login-text span a:hover,
+.register-text span a:hover {
+  text-decoration: underline;
+}
+
+.login-text p,
+.register-text p {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.login-l-one,
+.login-l-two,
+.register-l-one,
+.register-l-two,
+.register-l-three,
+.register-l-four {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.login-l-one i,
+.login-l-two i,
+.register-l-one i,
+.register-l-two i,
+.register-l-three i,
+.register-l-four i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+}
+
+.login-l-one input,
+.login-l-two input,
+.register-l-one input,
+.register-l-two input,
+.register-l-three input,
+.register-l-four input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 40px;
+}
+
+.login-btn button,
+.register-btn button {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: ease 0.4s;
+  margin-bottom: 12px;
+}
+
+.login-btn button:hover,
+.register-btn button:hover {
+  cursor: pointer;
+  background-color: #e8284f;
+}
+
+.forgot-pass,
+.remember-me {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot-pass span a,
+.remember-me span a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: ease 0.3s;
+}
+
+.forgot-pass span a:hover,
+.remember-me span a:hover {
+  text-decoration: underline;
+}

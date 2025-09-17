@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation-Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">JOJO.</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="auth-btns">
+        <a href="#" class="signin" id="nav-auth-signin">Sign in</a>
+        <a href="#" class="signup" id="nav-auth-signup">Sign Up</a>
+      </div>
+    </header>
+    <main>
+      <div class="auth-box">
+        <div class="login-container" id="login-page">
+          <div class="login-text">
+            <span
+              >Don't have an account?
+              <a href="#" id="show-register">Sign Up</a></span
+            >
+            <p>Login</p>
+          </div>
+          <div class="login-entries">
+            <form action="#">
+              <div class="login-l-one">
+                <label for="email"></label>
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="email"
+                  name="usr-email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="login-l-two">
+                <label for="password"></label>
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  name="usr-pass"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="login-btn">
+                <button>Sign In</button>
+              </div>
+              <div class="forgot-pass">
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Remember me</label>
+                </div>
+                <span><a href="#">Forgot password?</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="register-container" id="register-page">
+          <div class="register-text">
+            <span>Have an account? <a href="#" id="show-login">Login</a></span>
+            <p>Sign Up</p>
+          </div>
+          <div class="register-entries">
+            <form action="#">
+              <div class="register-l-one">
+                <label for="firstname"></label>
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  name=""
+                  id="firstname"
+                  placeholder="Firstname"
+                />
+              </div>
+              <div class="register-l-two">
+                <label for="lastname"></label>
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  name=""
+                  id="lastname"
+                  placeholder="Lastname"
+                />
+              </div>
+              <div class="register-l-three">
+                <label for="email"></label>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="" id="email" placeholder="Email" />
+              </div>
+              <div class="register-l-four">
+                <label for="password"></label>
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  name=""
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="register-btn">
+                <button type="submit">Register</button>
+              </div>
+              <div class="remember-me">
+                <div>
+                  <input type="checkbox" name="" id="rememberme" />
+                  <label for="remember">Remember Me</label>
+                </div>
+                <span><a href="#">Terms & conditions</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
