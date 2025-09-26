@@ -91,10 +91,6 @@ nav ul li a:focus::after {
   width: 100%;
 }
 
-.auth-btns {
-  /* margin-right: 80px; */
-}
-
 .auth-btns a {
   text-decoration: none;
   color: var(--text-color);
