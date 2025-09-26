@@ -1,28 +1,38 @@
 const navLoginBtn = document.getElementById("nav-auth-signin");
 const navRegisterBtn = document.getElementById("nav-auth-signup");
 
-const showLogin = document.getElementById("show-login");
-const showRegister = document.getElementById("show-register");
+const showLoginLink = document.getElementById("show-login");
+const showRegisterLink = document.getElementById("show-register");
 
 const loginPage = document.getElementById("login-page");
 const registerPage = document.getElementById("register-page");
 
-navLoginBtn.addEventListener("click", () => {
-  loginPage.style.display = "block";
-  registerPage.style.display = "none";
+// Function to handle the form switch
+const switchToForm = (showPage, hidePage) => {
+  // Add 'hidden' to the page we want to hide
+  hidePage.classList.add("hidden");
+  // Remove 'hidden' from the page we want to show
+  showPage.classList.remove("hidden");
+};
+
+// 1. Navigation Bar Buttons
+navLoginBtn.addEventListener("click", (e) => {
+  e.preventDefault(); // Stop the default anchor jump
+  switchToForm(loginPage, registerPage);
 });
 
-navRegisterBtn.addEventListener("click", () => {
-  loginPage.style.display = "none";
-  registerPage.style.display = "block";
+navRegisterBtn.addEventListener("click", (e) => {
+  e.preventDefault(); // Stop the default anchor jump
+  switchToForm(registerPage, loginPage);
 });
 
-showLogin.addEventListener("click", () => {
-  loginPage.style.display = "block";
-  registerPage.style.display = "none";
+// 2. Links inside the Auth Box
+showLoginLink.addEventListener("click", (e) => {
+  e.preventDefault(); // Stop the default anchor jump
+  switchToForm(loginPage, registerPage);
 });
 
-showRegister.addEventListener("click", () => {
-  registerPage.style.display = "block";
-  loginPage.style.display = "none";
+showRegisterLink.addEventListener("click", (e) => {
+  e.preventDefault(); // Stop the default anchor jump
+  switchToForm(registerPage, loginPage);
 });
