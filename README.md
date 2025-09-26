@@ -8,23 +8,21 @@ It uses HTML, CSS and a tiny bit of JavaScript.
 
 ### HTML
 
-_)Removed the useless labels/empty labels.
-_)Updated the id(input) to make them unique.  
-_)Simplified the class name for better code reusability, if something got cut or removed later.
-_)Added the required attrbute in respective places.
-\_)Added the button types which was not there previously.
+Removed the useless labels/empty labels.
+Updated the id(input) to make them unique.  
+Simplified the class name for better code reusability, if something got cut or removed later.
+Added the required attrbute in respective places.
+Added the button types which was not there previously.
 
 ### CSS
 
-_)Removed the duplicate work.
-_)Removed unnecessary properties.
-_)Added media queries for responsiveness.
-_)
-\_)Used the !important modifier for hiding.
+Removed the duplicate work.
+Removed unnecessary properties.
+Added media queries for responsiveness.
+
+Used the !important modifier for hiding.
 
 ### JS
 
-_)Gave better naming
-_)Introduced function
-\_)
-\_)
+Gave better naming
+Introduced function
