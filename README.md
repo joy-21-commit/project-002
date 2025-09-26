@@ -14,7 +14,7 @@ _)Simplified the class name for better code reusability, if something got cut or
 _)Added the required attrbute in respective places.
 \_)Added the button types which was not there previously.
 
-# CSS
+## CSS
 
 _)Removed the duplicate work.
 _)Removed unnecessary properties.
